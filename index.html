@@ -11,12 +11,32 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
             .manrope{
                 font-family: 'Manrope', sans-serif;
             }
+            .montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
         </style>
         <script src="https://kit.fontawesome.com/0c92d7cdab.js"
             crossorigin="anonymous"></script>
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          backgroundImage: {
+        'choose': "url('./assets/h-1.jpg')",
+        
+      }
+        }
+      }
+    }
+  </script>
 
     </head>
     <body class="manrope">
@@ -40,7 +60,8 @@
                             href>Portfolio</a></li>
                     <li><a class="font-normal text-lg text-[#737373]"
                             href>Blogs</a></li>
-                    <li><a class="font-normal text-lg text-[#737373]"  href>Contact us</a></li>
+                    <li><a class="font-normal text-lg text-[#737373]"
+                            href>Contact us</a></li>
 
                 </ul>
 
@@ -81,10 +102,10 @@
                 </div>
             </div>
 
-        </header> 
+        </header>
         <main class="space-y-28">
 
-             <section class="thoughtful-design bg-[#F4F4F4] mt-28 ">
+            <section class="thoughtful-design bg-[#F4F4F4] mt-28 ">
                 <div
                     class="thought  max-w-[90%] lg:max-w-[82%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 justify-between py-8 lg:py-24">
                     <div class="space-y-6 relative">
@@ -178,7 +199,8 @@
                     </div>
                 </div>
 
-                <div class="How-we py-8 lg:py-28 max-w-[90%] lg:max-w-[82%] mx-auto">
+                <div
+                    class="How-we py-8 lg:py-28 max-w-[90%] lg:max-w-[82%] mx-auto">
                     <div
                         class="How-we  flex items-center py-2 px-4 gap-2.5 bg-white rounded-full w-fit mx-auto mb-6 ">
                         <i class="fa-solid fa-arrow-right-long"></i>
@@ -198,7 +220,8 @@
                             sleek metal accents.</p>
                     </div>
 
-                    <div class="card-container- grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
+                    <div
+                        class="card-container- grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
                         <div
                             class="p-6 lg:px-6 lg:py-9 rounded-2xl bg-[#E7C1D3] flex flex-col gap-3 ">
                             <img class="w-fit" src="./assets/concept.png" alt>
@@ -213,10 +236,12 @@
                         </div>
                         <div
                             class="p-6 lg:px-6 lg:py-9 rounded-2xl bg-[#EFDA6E] flex flex-col gap-3 ">
-                            <img class="w-fit" src="./assets/flow-chart.png" alt>
+                            <img class="w-fit" src="./assets/flow-chart.png"
+                                alt>
                             <div class>
                                 <p
-                                    class="font-extrabold text-xl lg:text-xl text-[#1C1C1C] mb-2.5 ">Design Process</p>
+                                    class="font-extrabold text-xl lg:text-xl text-[#1C1C1C] mb-2.5 ">Design
+                                    Process</p>
                                 <p
                                     class="font-medium text-[16px]  text-[#494949] ">The
                                     barn house captivates with its blend of
@@ -225,7 +250,8 @@
                         </div>
                         <div
                             class="p-6 lg:px-6 lg:py-9 rounded-2xl bg-[#A4DAC3] flex flex-col gap-3 ">
-                            <img class="w-fit" src="./assets/commercial.png" alt>
+                            <img class="w-fit" src="./assets/commercial.png"
+                                alt>
                             <div class>
                                 <p
                                     class="font-extrabold text-xl lg:text-xl text-[#1C1C1C] mb-2.5 ">Supervision</p>
@@ -237,10 +263,12 @@
                         </div>
                         <div
                             class="p-6 lg:px-6 lg:py-9 rounded-2xl bg-[#77AAEA] flex flex-col gap-3 ">
-                            <img class="w-fit" src="./assets/budget-planning.png" alt>
+                            <img class="w-fit"
+                                src="./assets/budget-planning.png" alt>
                             <div class>
                                 <p
-                                    class="font-extrabold text-xl lg:text-xl text-[#1C1C1C] mb-2.5 ">Budget Planning</p>
+                                    class="font-extrabold text-xl lg:text-xl text-[#1C1C1C] mb-2.5 ">Budget
+                                    Planning</p>
                                 <p
                                     class="font-medium text-[16px]  text-[#494949] ">The
                                     barn house captivates with its blend of
@@ -250,7 +278,7 @@
                     </div>
 
                 </div>
-            </section> 
+            </section>
 
             <section
                 class="latest-portfolio max-w-[90%] lg:max-w-[82%] mx-auto">
@@ -441,6 +469,62 @@
             </section>
 
             <section
+                class="why-choose-us bg-[#F4F4F4]  bg-cover bg-no-repeat py-8 lg:py-28 h-full ">
+
+                <div class="max-w-[90%] lg:max-w-[82%] mx-auto ">
+                    <div
+                        class="why-choose-us  flex items-center py-2 px-4 gap-2.5 bg-[#ABEF5F] rounded-full w-fit mx-auto mb-6 ">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <p class="text-[#494949] text-lg font-bold">What Sets Us
+                            Apart
+                        </p>
+                    </div>
+
+                    <div class="read-our-articles space-y-6 lg:w-2/4 mx-auto">
+                        <h1
+                            class="font-bold text-2xl lg:text-[40px]   text-[#212121] text-center ">Why
+                            Choose Us</h1>
+                        <p
+                            class="font-medium text-sm lg:text-lg text-[#494949] text-center ">The
+                            barn house captivates with its blend of rustic
+                            charm and
+                            modern sophistication, featuring weathered wood,
+                            sleek metal accents.</p>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-6 items-center mt-8 justify-between border-2 p-4 rounded-2xl">
+                        <div class="lg:w-1/2">
+                            <h1 class="montserrat font-bold text-4xl lg:text-7xl  text-[#212121] text-center lg:text-start mb-6">Our Vision</h1>
+                             <p
+                            class="font-medium text-sm lg:text-lg text-[#494949]  text-center lg:text-start">The
+                            barn house captivates with its blend of rustic
+                            charm and
+                            modern sophistication, featuring weathered wood,
+                            sleek metal accents.</p>
+                    </div>
+                        
+                        <div class=" flex flex-col gap-6   p-0 lg:p-6 rounded-2xl w-full lg:w-1/2 lg:bg-[#acef5f1c]">
+                            <label for="" class="montserrat font-semibold text-xl lg:text-3xl">Idea And Concept</label>
+                            <progress class="progress progress-accent w-full h-4"
+                                value="97" max="100"></progress>
+                                <label class="montserrat font-semibold text-xl lg:text-3xl" for="">Accuracy</label>
+                            <progress class="progress progress-accent w-full h-4"
+                                value="91" max="100"></progress>
+                                <label class="montserrat font-semibold text-xl lg:text-3xl" for="">Execution</label>
+                            <progress class="progress progress-accent w-full h-4"
+                                value="95" max="100"></progress>
+                                <label class="montserrat font-semibold text-xl lg:text-3xl" for="">Communication</label>
+                            <progress class="progress progress-accent w-full h-4"
+                                value="87" max="100"></progress>
+                            
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section
                 class="Let’s-Connect bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat py-8 lg:py-28">
                 <div class="max-w-[90%] lg:max-w-[68%] mx-auto">
                     <div
@@ -507,7 +591,8 @@
         </main>
         <footer class="bg-[#1C1C1C] py-16 lg:py-28">
 
-            <div class="footer-container space-y-12 max-w-[90%] lg:max-w-[100%]  mx-auto text-center">
+            <div
+                class="footer-container space-y-12 max-w-[90%] lg:max-w-[100%]  mx-auto text-center">
                 <div class="lg:w-1/2 mx-auto">
                     <button
                         class="px-6 py-3 rounded-full  text-[#E9E9E9] font-extrabold text-3xl flex gap-3 items-start w-full lg:w-fit mx-auto justify-center"><i
@@ -533,7 +618,8 @@
 
                 </ul>
                 <button
-                    class="px-6 py-3 rounded-full bg-[#ABEF5F] text-[#1C1C1C] font-extrabold text-lg flex gap-2 items-center w-full lg:w-fit mx-auto justify-center">Book Consult<i
+                    class="px-6 py-3 rounded-full bg-[#ABEF5F] text-[#1C1C1C] font-extrabold text-lg flex gap-2 items-center w-full lg:w-fit mx-auto justify-center">Book
+                    Consult<i
                         class="fa-solid fa-arrow-up bg-[#1C1C1C] text-[#ffffff] px-2.5 py-2 rounded-full  rotate-45"></i></button>
 
             </div>
